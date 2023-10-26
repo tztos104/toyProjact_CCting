@@ -5,7 +5,8 @@ import java.net.URLEncoder;
 import javax.servlet.ServletOutputStream;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import controller.DistService;
+
+import service.DistService;
 
 public class FileDown implements DistService {
 
@@ -14,7 +15,7 @@ public class FileDown implements DistService {
 		System.out.println("FileDown execute 실행 "+fName);
 		
 		String path = request.getRealPath("up");
-		path = "D:\\CCting_ProJ\\CCting_Proj\\src\\main\\webapp\\up\\"+fName;
+		path = "C:\\CCting_ProJ\\CCting_Proj\\src\\main\\webapp\\up\\"+fName;
 		
 		try {
 			FileInputStream fis = new FileInputStream(path);

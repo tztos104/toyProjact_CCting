@@ -3,10 +3,11 @@ package dist;
 import java.io.File;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import controller.DistService;
+
 import model.DistDAO;
 import model.DistDTO;
 import model.PageData;
+import service.DistService;
 
 
 public class DdeleteReg implements DistService {
@@ -15,7 +16,7 @@ public class DdeleteReg implements DistService {
 		System.out.println("BdeleteReg execute 실행 ");
 		
 		String path = request.getRealPath("up");
-		path = "D:\\CCting_ProJ\\CCting_Proj\\src\\main\\webapp\\up";
+		path = "C:\\CCting_ProJ\\CCting_Proj\\src\\main\\webapp\\up";
 		
 		DistDTO dto = new DistDTO();
 		PageData pd = (PageData)request.getAttribute("pd");

@@ -2,7 +2,8 @@ package dist;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import controller.DistService;
+
+import service.DistService;
 
 public class DdeleteForm implements DistService {
 	

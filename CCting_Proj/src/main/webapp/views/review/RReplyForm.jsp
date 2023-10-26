@@ -1,4 +1,4 @@
-<%@page import="r_model.RBoardDTO"%>
+<%@page import="model.RBoardDTO"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%

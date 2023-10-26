@@ -8,7 +8,7 @@
 			</td>
 		</tr>
 		<tr align="center">
-			<th><a href="/CCting_Proj/info">공지사항</a></th>
+			<th><a href="/CCting_Proj/notice">공지사항</a></th>
 			<th><a href="/CCting_Proj/review/RList">리뷰게시판</a></th>
 			<th><a href="/CCting_Proj/arts/AList">배우게시판</a></th>
 			<th><a href="/CCting_Proj/dist/DList">작품게시판</a></th>

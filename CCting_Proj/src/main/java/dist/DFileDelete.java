@@ -9,16 +9,17 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.oreilly.servlet.MultipartRequest;
 import com.oreilly.servlet.multipart.DefaultFileRenamePolicy;
-import controller.DistService;
+
 import model.DistDAO;
 import model.DistDTO;
 import model.PageData;
+import service.DistService;
 
 
 public class DFileDelete implements DistService {
 
 	public void execute(HttpServletRequest request, HttpServletResponse response) {
-		String path = "D:\\CCting_ProJ\\CCting_Proj\\src\\main\\webapp\\up";
+		String path = "C:\\CCting_ProJ\\CCting_Proj\\src\\main\\webapp\\up";
 		
 		try {
 			MultipartRequest mr = new MultipartRequest(request, path, 10*1024*1024, "utf-8", new DefaultFileRenamePolicy());

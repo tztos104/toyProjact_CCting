@@ -3,8 +3,9 @@ package dist;
 import javax.servlet.http.HttpServletRequest;
 
 import javax.servlet.http.HttpServletResponse;
-import controller.DistService;
+
 import model.DistDAO;
+import service.DistService;
 
 public class DmodifyForm implements DistService {
 

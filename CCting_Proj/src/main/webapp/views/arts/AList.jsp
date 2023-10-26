@@ -1,6 +1,6 @@
-<%@page import="model_p.PageData"%>
+<%@page import="model.PageData"%>
 <%@page import="java.util.ArrayList"%>
-<%@page import="model_p.ArtsDTO"%>
+<%@page import="model.ArtsDTO"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <table border="" width="100%">

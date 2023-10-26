@@ -1,4 +1,4 @@
-<%@page import="model_p.PageData"%>
+<%@page import="model.PageData"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%

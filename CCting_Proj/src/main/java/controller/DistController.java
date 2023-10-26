@@ -9,6 +9,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import model.PageData;
+import service.DistService;
 
 @WebServlet("/dist/*")
 public class DistController extends HttpServlet {
@@ -23,7 +24,7 @@ public class DistController extends HttpServlet {
 		
 		try {
 			request.setCharacterEncoding("utf-8");
-			request.setAttribute("mainPage", "distjsp/"+serviceStr);
+			request.setAttribute("mainPage", "dist/"+serviceStr);
 			request.setAttribute("pd", new PageData(request));
 			
 			DistService service = (DistService)Class.forName("dist."+serviceStr).newInstance();
