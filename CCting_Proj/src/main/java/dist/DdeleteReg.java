@@ -15,9 +15,11 @@ public class DdeleteReg implements DistService {
 	public void execute(HttpServletRequest request, HttpServletResponse response) {
 		System.out.println("BdeleteReg execute 실행 ");
 		
-		String path = request.getRealPath("up");
-		path = "C:\\CCting_ProJ\\CCting_Proj\\src\\main\\webapp\\up";
-		
+		String path = request.getServletContext().getRealPath("up");
+		/*
+		 * String path = request.getRealPath("up"); path =
+		 * "C:\\CCting_ProJ\\CCting_Proj\\src\\main\\webapp\\up";
+		 */
 		DistDTO dto = new DistDTO();
 		PageData pd = (PageData)request.getAttribute("pd");
 		

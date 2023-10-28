@@ -18,9 +18,11 @@ public class DwriteReg implements DistService {
 
 	public void execute(HttpServletRequest request, HttpServletResponse response) {
 		System.out.println("BwriteReg execute 실행 ");
-		
-		String path = request.getRealPath("up");
-		path = "C:\\CCting_ProJ\\CCting_Proj\\src\\main\\webapp\\up";
+		String path = request.getServletContext().getRealPath("up");
+		/*
+		 * String path = request.getRealPath("up"); path =
+		 * "C:\\CCting_ProJ\\CCting_Proj\\src\\main\\webapp\\up";
+		 */
 		
 		try {
 			MultipartRequest mr = new MultipartRequest(request, path, 10*1024*1024, "utf-8", new DefaultFileRenamePolicy());

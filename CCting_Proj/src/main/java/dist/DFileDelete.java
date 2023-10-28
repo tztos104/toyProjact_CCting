@@ -19,8 +19,8 @@ import service.DistService;
 public class DFileDelete implements DistService {
 
 	public void execute(HttpServletRequest request, HttpServletResponse response) {
-		String path = "C:\\CCting_ProJ\\CCting_Proj\\src\\main\\webapp\\up";
-		
+//		String path = "C:\\CCting_ProJ\\CCting_Proj\\src\\main\\webapp\\up";
+		String path = request.getServletContext().getRealPath("up");
 		try {
 			MultipartRequest mr = new MultipartRequest(request, path, 10*1024*1024, "utf-8", new DefaultFileRenamePolicy());
 			DistDTO dto = new DistDTO();

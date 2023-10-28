@@ -13,9 +13,11 @@ public class FileDown implements DistService {
 	public void execute(HttpServletRequest request, HttpServletResponse response) {
 		String fName = request.getParameter("fName");
 		System.out.println("FileDown execute 실행 "+fName);
-		
-		String path = request.getRealPath("up");
-		path = "C:\\CCting_ProJ\\CCting_Proj\\src\\main\\webapp\\up\\"+fName;
+		String path = request.getServletContext().getRealPath("up");
+		/*
+		 * String path = request.getRealPath("up"); path =
+		 * "C:\\CCting_ProJ\\CCting_Proj\\src\\main\\webapp\\up\\"+fName;
+		 */
 		
 		try {
 			FileInputStream fis = new FileInputStream(path);

@@ -9,6 +9,7 @@
 <head>
 <meta charset="UTF-8">
 <title>template</title>
+ <link rel="stylesheet" type="text/css" href="">
 </head>
 <body>
 	<table border="">
